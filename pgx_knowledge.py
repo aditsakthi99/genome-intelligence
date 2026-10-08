@@ -170,12 +170,23 @@ DRUG_GUIDANCE = {
             "Level A means CPIC judges the evidence sufficient to recommend a "
             "prescribing change. It is their highest tier."
         ),
-        "source_name": "CPIC Guideline for Clopidogrel and CYP2C19",
-        "source_url": "https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19/",
+        "source_name": (
+            "CPIC Guideline for CYP2C19 Genotype and Clopidogrel Therapy: "
+            "2022 Update"
+        ),
+        "source_citation": (
+            "Lee CR, Luzum JA, Sangkuhl K, et al. Clin Pharmacol Ther. "
+            "2022;112(5):959-967. doi:10.1002/cpt.2526"
+        ),
+        "source_url": "https://files.cpicpgx.org/data/guideline/publication/clopidogrel/2022/35034351.pdf",
         "last_updated": "2022",
+        "verified_on": "2026-10-08, against the CPIC 2022 publication PDF",
         "population_measured": (
-            "Primary evidence from acute coronary syndrome / PCI cohorts, "
-            "predominantly European and East Asian ancestry."
+            "Primary evidence from cardiovascular (ACS/PCI) and neurovascular "
+            "cohorts, predominantly European and East Asian ancestry. CPIC "
+            "also states plainly that CYP2C19 variation does not account for "
+            "all variability in clopidogrel response, so genotype is one input "
+            "among several."
         ),
         "allele_frequency": {
             "*2": {
@@ -202,30 +213,44 @@ DRUG_GUIDANCE = {
         },
         "guideline_positions": [
             {
-                "body": "CPIC",
+                "body": "CPIC (cardiovascular indications)",
                 "position": (
-                    "For Poor and Intermediate Metabolizers in ACS/PCI, "
-                    "recommends an alternative antiplatelet such as prasugrel "
-                    "or ticagrelor where not contraindicated."
+                    "For Poor and Intermediate Metabolizers, avoid standard "
+                    "dose clopidogrel if possible; use prasugrel or ticagrelor "
+                    "where not contraindicated. The 2022 update raised the "
+                    "strength of the Intermediate Metabolizer recommendation "
+                    "to strong."
                 ),
-                "url": "https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19/",
+                "url": "https://files.cpicpgx.org/data/guideline/publication/clopidogrel/2022/35034351.pdf",
+            },
+            {
+                "body": "CPIC (neurovascular indications)",
+                "position": (
+                    "Separate recommendation table: an alternative P2Y12 "
+                    "inhibitor where clinically indicated and not "
+                    "contraindicated. The 2022 update expanded CPIC's scope "
+                    "beyond the cardiovascular setting."
+                ),
+                "url": "https://files.cpicpgx.org/data/guideline/publication/clopidogrel/2022/35034351.pdf",
             },
             {
                 "body": "DPWG (Dutch Pharmacogenetics Working Group)",
                 "position": (
-                    "Also recommends an alternative for reduced-function "
-                    "metabolizers, but scopes its recommendation by clinical "
-                    "indication differently from CPIC. Confirm the current "
-                    "wording before relying on this line."
+                    "Also publishes a CYP2C19-clopidogrel guideline and also "
+                    "recommends an alternative drug for Intermediate and Poor "
+                    "Metabolizers. The two bodies agree on direction here; "
+                    "they differ in how recommendations are scoped and graded."
                 ),
-                "url": "https://www.pharmgkb.org/page/dpwg",
+                "url": "https://www.clinpgx.org/guidelineAnnotation/PA166104948/annotation",
             },
         ],
         "contested": (
-            "Whether CYP2C19 genotype should guide clopidogrel therapy outside "
-            "the ACS/PCI setting is not settled. Guideline bodies scope their "
-            "recommendations differently, and this system reports that rather "
-            "than picking a side."
+            "The *2/*17 combination is the weak point. CPIC classifies it as "
+            "an Intermediate Metabolizer but has carried that assignment as a "
+            "provisional classification, because how one no-function and one "
+            "increased-function allele offset each other is not established. "
+            "This system reports the provisional status rather than hiding it "
+            "behind a clean label."
         ),
     },
     "SLCO1B1": {
@@ -240,12 +265,24 @@ DRUG_GUIDANCE = {
             "Level A means CPIC judges the evidence sufficient to recommend a "
             "prescribing change."
         ),
-        "source_name": "CPIC Guideline for Statins and SLCO1B1, ABCG2, CYP2C9",
-        "source_url": "https://cpicpgx.org/guidelines/cpic-guideline-for-statins/",
-        "last_updated": "2022",
+        "source_name": (
+            "CPIC Guideline for SLCO1B1, ABCG2, and CYP2C9 Genotypes and "
+            "Statin-Associated Musculoskeletal Symptoms"
+        ),
+        "source_citation": (
+            "Cooper-DeHoff RM, Niemi M, Ramsey LB, et al. Clin Pharmacol Ther. "
+            "2022;111(5):1007-1021. doi:10.1002/cpt.2557"
+        ),
+        "source_url": "https://files.cpicpgx.org/data/guideline/publication/statins/2022/publication.pdf",
+        "last_updated": "2022 (replaces the 2012 and 2014 simvastatin guidelines)",
+        "verified_on": "2026-10-08, against the CPIC 2022 publication and supplement",
         "population_measured": (
-            "The landmark association came from the SEARCH trial, a "
-            "predominantly European-ancestry cohort."
+            "The landmark association came from the SEARCH trial, in which "
+            "myopathy was observed on 80 mg simvastatin in a predominantly "
+            "European-ancestry cohort. CPIC's own 2022 supplement notes that "
+            "rs4149056 does not appear to contribute to statin sensitivity in "
+            "Asian populations in the same way, so this finding does not "
+            "transfer cleanly across ancestries."
         ),
         "allele_frequency": {
             "*5 (rs4149056 C allele)": {
@@ -269,19 +306,24 @@ DRUG_GUIDANCE = {
                 "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-statins/",
             },
             {
-                "body": "DPWG",
+                "body": "DPWG (Dutch Pharmacogenetics Working Group)",
                 "position": (
-                    "Issues dose-limit guidance for simvastatin in reduced "
-                    "function carriers. Confirm the current wording before "
-                    "relying on this line."
+                    "Also publishes an SLCO1B1-simvastatin guideline, "
+                    "recommending a lower dose, an alternative drug, or "
+                    "additional monitoring such as routine CK surveillance. "
+                    "Broadly aligned with CPIC in direction."
                 ),
-                "url": "https://www.pharmgkb.org/page/dpwg",
+                "url": "https://www.clinpgx.org/guidelineAnnotation/PA166105005/annotation",
             },
         ],
         "contested": (
-            "The strength of the association is dose-dependent and best "
-            "established for simvastatin specifically. Extending it to other "
-            "statins is weaker evidence."
+            "The association is dose-dependent and statin-specific. CPIC rates "
+            "the simvastatin evidence high, atorvastatin moderate, and finds "
+            "little evidence for pravastatin or rosuvastatin, so this is not a "
+            "class effect. Risk also scales sharply with dose: roughly 2.6-fold "
+            "per C allele at 40 mg versus substantially higher at 80 mg. A "
+            "result reported without the dose attached means less than it "
+            "appears to."
         ),
     },
 }

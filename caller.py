@@ -145,9 +145,10 @@ def call_cyp2c19(genotype_file) -> Finding:
     if no_function == 1 and increased == 1:
         contested = (
             "This diplotype carries one no-function and one increased-function "
-            "allele. How the two offset each other is not settled, and the "
-            "Intermediate Metabolizer assignment is the conservative reading "
-            "rather than a consensus one."
+            "allele. CPIC assigns it Intermediate Metabolizer, but has carried "
+            "that assignment as a provisional classification: how the two "
+            "alleles offset each other is not established. The label is shown "
+            "because CPIC publishes it, not because it is settled."
         )
 
     return Finding(

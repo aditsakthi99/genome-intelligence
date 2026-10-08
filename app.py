@@ -134,6 +134,10 @@ def render_evidence(finding):
         f"- Source: [{g['source_name']}]({g['source_url']}) "
         f"(last updated {g['last_updated']})"
     )
+    if g.get("source_citation"):
+        st.caption(f"  {g['source_citation']}")
+    if g.get("verified_on"):
+        st.caption(f"  Claims in this entry hand-checked {g['verified_on']}.")
 
     st.markdown("**Population the evidence was measured in**")
     st.markdown(f"- {g['population_measured']}")
